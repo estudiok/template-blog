@@ -31,11 +31,13 @@
             <b:widget-setting name='style.linkcolor'>#0000ff</b:widget-setting>
             <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
             <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
+            <b:widget-setting name='timestampLabel'/>
             <b:widget-setting name='reactionsLabel'/>
             <b:widget-setting name='showAuthorProfile'>false</b:widget-setting>
             <b:widget-setting name='style.layout'>1x1</b:widget-setting>
             <b:widget-setting name='showLabels'>true</b:widget-setting>
             <b:widget-setting name='showLocation'>true</b:widget-setting>
+            <b:widget-setting name='postLabelsLabel'/>
             <b:widget-setting name='showTimestamp'>true</b:widget-setting>
             <b:widget-setting name='postsPerAd'>1</b:widget-setting>
             <b:widget-setting name='showBacklinks'>false</b:widget-setting>
@@ -300,15 +302,7 @@
           <b:includable id='googlePlusShare'>
 </b:includable>
           <b:includable id='headerByline'>
-  <b:if cond='data:widgets.Blog.first.headerByline'>
-    <div class='post-header'>
-      <div class='post-header-line-1'>
-        <b:with value='&quot;header-1&quot;' var='regionName'>
-          <b:include data='data:widgets.Blog.first.headerByline.items' name='bylineRegion'/>
-        </b:with>
-      </div>
-    </div>
-  </b:if>
+
 </b:includable>
           <b:includable id='homePageLink'>
   <a class='home-link' expr:href='data:blog.homepageUrl'>
